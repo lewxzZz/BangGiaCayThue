@@ -20,7 +20,6 @@ body{
     background:#000;
     color:#fff;
     padding:20px;
-    overflow-y:auto;
 }
 
 /* ===================== HEADER ===================== */
@@ -63,26 +62,16 @@ body{
 /* Tiêu đề */
 
 .header h1{
-
-    margin-top:18px;
-
-    font-size:48px;
-
+    margin-top:12px;
+    font-size:30px;
     font-weight:900;
-
-    letter-spacing:3px;
-
+    letter-spacing:1px;
+    white-space:nowrap;
     animation:rainbowText 6s linear infinite;
-
     text-shadow:
-
         0 0 10px currentColor,
-
         0 0 20px currentColor,
-
-        0 0 40px currentColor,
-
-        0 0 80px currentColor;
+        0 0 40px currentColor;
 }
 
 /* mạng xã hội */
@@ -100,9 +89,9 @@ body{
 
 .social{
 
-    width:62px;
+    width:54px;
 
-    height:62px;
+    height:54px;
 
     display:flex;
 
@@ -128,23 +117,18 @@ body{
 
 .social img{
 
-    width:34px;
+    width:28px;
 
-    height:34px;
+    height:28px;
 }
 
 /* ================= KHUNG ================= */
 
 .box{
-
     border:3px solid red;
-
     border-radius:22px;
-
     padding:18px;
-
-    height:72vh;
-
+    height:60vh;
     animation:rainbowBorder 6s linear infinite;
 }
 
@@ -154,7 +138,7 @@ body{
 
     margin-bottom:20px;
 
-    font-size:30px;
+    font-size:24px;
 
     animation:rainbowText 6s linear infinite;
 
@@ -168,11 +152,8 @@ body{
 /* vùng cuộn */
 
 .list{
-
-    height:calc(72vh - 70px);
-
+    height:calc(60vh - 70px);
     overflow-y:auto;
-
     padding-right:10px;
 }
 
@@ -234,12 +215,9 @@ body{
 }
 
 .service{
-
-    max-width:72%;
-
-    font-size:18px;
-
-    line-height:1.4;
+    width:72%;
+    font-size:16px;
+    line-height:1.5;
 }
 
 .price{
@@ -301,23 +279,6 @@ body{
 100%{border-color:#ff0000;box-shadow:0 0 18px #ff0000;}
 
 }
-.item{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    background:#0f0f0f;
-
-    border:1px solid rgba(255,255,255,.35);
-
-    border-radius:14px;
-
-    padding:16px 18px;
-
-    margin-bottom:12px;
-
-    transition:.25s;
-}
 
 .item:hover{
     transform:scale(1.02);
@@ -339,6 +300,21 @@ color:#fff;
 text-shadow:
 0 0 8px #fff,
 0 0 15px rgba(255,255,255,.6);
+}
+@media (max-width:480px){
+
+    body{
+        padding:12px;
+    }
+
+    .box{
+        padding:14px;
+    }
+
+    .item{
+        padding:14px;
+    }
+
 }
 </style>
 
@@ -619,3 +595,8 @@ text-shadow:
     <span class="service">lưỡi hái bóng tối (yêu cầu đã qua sea 3)</span>
     <span class="price">15K</span>
 </div>
+    </div>
+</div>
+
+</body>
+</html>
